@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
     init.porsche.rc \
     init.qti.ufs.rc \
     init.target.rc \
-    ueventd.lahaina.rc
+    ueventd.porsche.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
