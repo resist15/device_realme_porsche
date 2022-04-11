@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.default \
+    init.porsche.rc \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.lahaina.rc

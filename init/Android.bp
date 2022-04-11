@@ -19,6 +19,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.porsche.rc",
+    src: "init.porsche.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "init.target.rc",
     src: "init.target.rc",
     sub_dir: "init/hw",
