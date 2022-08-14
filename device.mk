@@ -162,9 +162,6 @@ TARGET_USES_QSSI := true
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := all
 
-# RRO
-TARGET_USES_RRO := true
-
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
