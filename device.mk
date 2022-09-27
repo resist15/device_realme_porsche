@@ -190,6 +190,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock \
     libsensorndkbridge
 
+PRODUCT_COPY_FILES += \
+    $(HARDWARE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard
 
