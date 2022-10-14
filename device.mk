@@ -104,11 +104,6 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1 \
    android.hardware.keymaster@4.1.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti \
-    lights.qcom
-
 # Manifests
 DEVICE_MANIFEST_FILE := device/realme/porsche/manifest_lahaina.xml
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
