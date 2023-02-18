@@ -34,6 +34,9 @@ vendor.display.primary_mixer_stages=9
 persist.vendor.dpm.idletimer.mode=default 
 persist.vendor.dpmhalservice.enable=1
 
+# Fingerprint
+persist.vendor.fp.template_updateflag=V1
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
