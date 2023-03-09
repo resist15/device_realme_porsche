@@ -115,7 +115,7 @@ ADD_RADIO_FILES := false
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
-TARGET_RECOVERY_FSTAB := device/realme/porsche/init/fstab.default
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
