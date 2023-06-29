@@ -131,7 +131,8 @@ DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oplus
 
 # Neural networks
 PRODUCT_PACKAGES += \
