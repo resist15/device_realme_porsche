@@ -113,6 +113,8 @@ PRODUCT_PACKAGES += \
 # Manifests
 DEVICE_MANIFEST_FILE := device/realme/porsche/manifest_lahaina.xml
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/porsche_vendor_framework_compatibility_matrix.xml
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
