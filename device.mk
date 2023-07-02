@@ -140,7 +140,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    PorscheCarrierConfig
+    AOSPAPorscheFrameworks \
+    PorscheCarrierConfig \
+    PorscheFrameworks
 
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
