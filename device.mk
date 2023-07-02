@@ -138,6 +138,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    PorscheCarrierConfig
+
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
