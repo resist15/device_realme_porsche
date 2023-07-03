@@ -141,9 +141,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAPorscheFrameworks \
+    AOSPAPorscheSystemUI \
     PorscheCarrierConfig \
     PorscheFrameworks \
-    PorscheSettingsProvider
+    PorscheSettingsProvider \
+    PorscheSystemUI
 
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
