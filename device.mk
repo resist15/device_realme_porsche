@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
     PorscheWifiResTarget
 
 # Partitions - Dynamic
-PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_PACKAGES += \
@@ -156,9 +155,6 @@ PRODUCT_PACKAGES += \
 
 # Partitions - FRP
 BOARD_FRP_PARTITION_NAME := frp
-
-# Partitions - Vendor
-ENABLE_VENDOR_IMAGE := true
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \

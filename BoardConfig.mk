@@ -67,24 +67,26 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 LOC_HIDL_VERSION = 4.0
 
 # Kernel
-BOARD_KERNEL_BASE        := 0x00000000
-BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0
-BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE += androidboot.memcg=1
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
-BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
-BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
-BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
-BOARD_KERNEL_CMDLINE += loop.max_part=7
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
-BOARD_KERNEL_CMDLINE += pcie_ports=compat
-BOARD_KERNEL_CMDLINE += service_locator.enable=1
-BOARD_KERNEL_CMDLINE += swiotlb=0
+BOARD_KERNEL_BASE    := 0x00000000
+BOARD_KERNEL_CMDLINE := \
+    androidboot.console=ttyMSM0 \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    cgroup.memory=nokmem,nosocket \
+    console=ttyMSM0,115200n8 \
+    ip6table_raw.raw_before_defrag=1 \
+    iptable_raw.raw_before_defrag=1 \
+    loop.max_part=7 \
+    lpm_levels.sleep_disabled=1 \
+    msm_rtb.filter=0x237 \
+    pcie_ports=compat \
+    service_locator.enable=1 \
+    swiotlb=0
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_DEFCONFIG := lahaina-qgki_defconfig
+USE_KERNEL_AOSP_LLVM := true
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := porsche,RE58B2L1
@@ -95,7 +97,7 @@ AB_OTA_UPDATER := true
 
 # Partitions - Dynamic
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext odm vendor
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 
 # Partitions - Filesystems
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -109,14 +111,13 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_ODM := odm
 
 # Partitions - Sizes
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0xC000000
 BOARD_DTBOIMG_PARTITION_SIZE := 0x1800000
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 32)
 BOARD_KERNEL-GKI_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
-BOARD_METADATAIMAGE_PARTITION_SIZE := 16777216
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6438256640
-BOARD_SUPER_PARTITION_SIZE := 6442450944
-BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 0x06000000
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 11186403072 # BOARD_SUPER_PARTITION_SIZE - 4MB
+BOARD_SUPER_PARTITION_SIZE := 11190403072
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
 # Radio
 ADD_RADIO_FILES := false
@@ -124,6 +125,8 @@ ADD_RADIO_FILES := false
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Screen density
 TARGET_SCREEN_DENSITY := 420
