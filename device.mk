@@ -146,7 +146,8 @@ PRODUCT_PACKAGES += \
     PorscheFrameworks \
     PorscheSettings \
     PorscheSettingsProvider \
-    PorscheSystemUI
+    PorscheSystemUI \
+    PorscheWifiResTarget
 
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
