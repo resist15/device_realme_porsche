@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     AOSPAPorscheSystemUI \
     PorscheCarrierConfig \
     PorscheFrameworks \
+    PorscheSettings \
     PorscheSettingsProvider \
     PorscheSystemUI
 
