@@ -142,7 +142,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AOSPAPorscheFrameworks \
     PorscheCarrierConfig \
-    PorscheFrameworks
+    PorscheFrameworks \
+    PorscheSettingsProvider
 
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
