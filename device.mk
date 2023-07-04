@@ -210,7 +210,11 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so
 
 # WLAN
 PRODUCT_COPY_FILES += \
