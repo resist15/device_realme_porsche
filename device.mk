@@ -30,8 +30,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 # API
-BOARD_SHIPPING_API_LEVEL := 30
-BOARD_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Architecture
@@ -208,17 +206,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.porsche
 
 # VNDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so \
