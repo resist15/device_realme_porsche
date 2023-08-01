@@ -1173,6 +1173,11 @@ vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|bf9174821ff9c980b80898
 vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|5df4a49fde6206da1ceed26aa93144ed43fab7f7
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|38ff048bb7f0a372e0d6ae88144bef2c01b8d10f
 
+# Camera - from MT2111_13.1.0.582(EX01)
+odm/etc/camera/fdc_lite_cl.cache|4e33b2d00c0d597ab716d7b0c1dc8a6fb69fe754
+odm/etc/camera/settings_fdc_lite.txt|ee7d9a99337309d0d85021e204fb5014846453d9
+odm/lib64/libFDClite.so|6288152be37c751bc7c159bfa8aeeddbacf398da
+
 # Charging
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
