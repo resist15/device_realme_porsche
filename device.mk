@@ -192,9 +192,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(HARDWARE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-# Storage
-PRODUCT_CHARACTERISTICS := nosdcard
-
 # System Helper
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
