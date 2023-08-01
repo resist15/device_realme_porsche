@@ -2909,6 +2909,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
             <item value="2" /> 
         </int-array>
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
 
     <!-- PA: Do not allow VoLTE on TIM Brazil -->
