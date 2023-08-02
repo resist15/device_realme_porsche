@@ -81,6 +81,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
+# Firmware
+$(call inherit-product-if-exists, vendor/realme/firmware/porsche/BoardConfigVendor.mk)
+
 # FM
 BOARD_HAVE_QCOM_FM := false
 
