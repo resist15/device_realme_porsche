@@ -131,6 +131,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAPorscheFrameworks \
