@@ -894,6 +894,7 @@ odm/etc/camera/settings_fdc.txt|e37d827e800c295636470c24b7b36be1d8b9fcad
 odm/etc/camera/wide.bin|778a284bfedcc8a33881b9121b3d5d667d59d19e
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml|26cae610d96fcb2dea171de21172f79e1b1f85f3
 odm/lib/libDeVIS.so|2a190416c1f15817947c01f7da5821e1a2a68e40
+odm/lib/libQnnHtpStub.so|c3671fe4712f62e9003281a3e331ddca29dbf23a
 odm/lib/libVDBlurlessAPI_v2.so|ce6584275cefd61115d6f1b66c90af6010ab0205
 odm/lib/libc++_shared.so|1ec35a25d92cfc44994d696c2c1f623106888687
 odm/lib64/camera/components/com.arcsoft.node.eisv2.so|9b338385ebcf29d0394b774faad9e4dc64a41c01
@@ -949,6 +950,7 @@ odm/lib64/libPerfectlyClearCruxOpt.so|bb51740007c9836de2a55e5104c4105b2cc0c1c6
 odm/lib64/libPlatformValidatorShared.so|d61884832429b0e1507fba6f7855d52d4c591b3f
 odm/lib64/libPolarrRender.so|8c96d96470fde7e8eb0ab50d0ae9cbd30e2014fe
 odm/lib64/libPreviewDecisionOld.so|5431f9e88018258bf2ccdf6fa0ff4ad44560c94e
+odm/lib64/libQnnHtpStub.so|6c2e50fc4a495dc54e4dbe7f3a479911e7bf97b9
 odm/lib64/libRedeyeReduce.so|7abc905888565d97f5d572ecda523414b05906c1
 odm/lib64/libSNPE.so|1a42a9e39ca388039251d8276e8a87106f7bf652
 odm/lib64/libSNPE_G.so|11ba8cf9522ff49013cad25b229e2687fd1e0b3b
