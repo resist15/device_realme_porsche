@@ -75,6 +75,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor
 
+# Dolby Manager
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
